@@ -62,9 +62,9 @@ import ReactSharedInternals from './ReactSharedInternals';
 import {startTransition} from './ReactStartTransition';
 
 // TODO: Move this branching into the other module instead and just re-export.
-const createElement = __DEV__ ? createElementWithValidation : createElementProd;
-const cloneElement = __DEV__ ? cloneElementWithValidation : cloneElementProd;
-const createFactory = __DEV__ ? createFactoryWithValidation : createFactoryProd;
+const createElement = createElementProd;
+const cloneElement = cloneElementProd;
+const createFactory = createFactoryProd;
 
 const Children = {
   map,
